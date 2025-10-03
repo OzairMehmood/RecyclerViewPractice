@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">RecyclerViewPractice</string>
+
+    <string-array name="provincelist">
+        <item>Provinces</item>
+        <item>Punjab</item>
+        <item>Sindh</item>
+        <item>Khyber Pakhtunkhwa</item>
+        <item>Balochistan</item>
+        <item>Gilgit-Baltistan</item>
+        <item>Azad Kashmir</item>
+    </string-array>
+
+</resources>
