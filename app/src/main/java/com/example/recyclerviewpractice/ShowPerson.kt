@@ -21,10 +21,16 @@ class ShowPerson : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(binding.root)
         val index = intent.getIntExtra("Index", -1)
-        binding.tvIndex.text = "Index $index clicked"
-        val name = intent.getStringExtra("Name")
-        binding.tvname.text = name
         val imageuri = intent.getStringExtra("Image")?.toUri()
+        val name = intent.getStringExtra("Name")
+        val fname = intent.getStringExtra("FName")
+        val province = intent.getStringExtra("Province")
+        val favlist = intent.getStringExtra("Favourite")
+        binding.tvIndex.text = "Index $index clicked"
+        binding.tvname.text = "Mr.$name"
+        binding.tvFname.text ="S/D of $fname"
+        binding.tvprovince.text = "From $province Pakistan"
+        binding.tvFav.text = "Interested in $favlist"
         if(imageuri==null) Toast.makeText(this,"Uri null",Toast.LENGTH_LONG).show()
         binding.img.setImageURI(imageuri)
 
